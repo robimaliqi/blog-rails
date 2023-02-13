@@ -9,15 +9,19 @@ RSpec.describe "Posts", type: :request do
   end
 
   describe "posts/create" do
+    def create_post(title, body)
+      post posts_path, params: {
+        post: {
+          title: title,
+          body: body 
+        }
+      }
+    end
+
     context "valid params" do
       it "successfully creates a post" do
         expect do
-          post posts_path, params: {
-            post: {
-              title: "example title",
-              body: "example body"
-            }
-          }
+          create_post("example title", "example body")
         end.to change { Post.count }.from(0).to(1)
         expect(response).to have_http_status(:redirect)
       end
@@ -25,14 +29,7 @@ RSpec.describe "Posts", type: :request do
 
     context "invalid params" do
       it "fails at creating the post" do
-        expect do
-          post posts_path, params: {
-            post: {
-              title: "",
-              body: ""
-            }
-          }
-        end.not_to change { Post.count }
+        expect { create_post("", "") }.not_to change { Post.count }
         expect(Post.count).to eq(0)
         expect(response).to have_http_status(:success)
       end
