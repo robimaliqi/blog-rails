@@ -1,24 +1,22 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---
 
-Things you may want to cover:
+Ruby Blog web application with Rspec tests:
 
-* Ruby version
+### How to use:
 
-* System dependencies
+---
 
-* Configuration
+`$ git clone https://github.com/robimaliqi/blog-rails.git`
+`$ bundle install`
+`rails db:migrate RAILS_ENV=development`
+`$rspec`
 
-* Database creation
+### How to run server:
 
-* Database initialization
+`rails s`
 
-* How to run the test suite
+### How to start the rails console:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`rails c`
