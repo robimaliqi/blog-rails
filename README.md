@@ -17,9 +17,13 @@ Run tests<br />
 
 ### How to run server:
 
+---
+
 `$ rails s`<br />
 Then open "localhost:3000" in your browser
 
 ### How to start the rails console:
+
+---
 
 `$ rails c`
