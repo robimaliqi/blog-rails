@@ -12,7 +12,7 @@ Ruby Blog web application with Rspec tests:
 `$ bundle install`<br />
 `$ rails db:migrate RAILS_ENV=development`<br />
 
-Run tests
+Run tests<br />
 `$ rspec`
 
 ### How to run server:
