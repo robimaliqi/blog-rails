@@ -8,16 +8,16 @@ Ruby Blog web application with Rspec tests:
 
 ---
 
-`$ git clone https://github.com/robimaliqi/blog-rails.git`
-`$ bundle install`
-`$ rails db:migrate RAILS_ENV=development`
+`$ git clone https://github.com/robimaliqi/blog-rails.git`<br />
+`$ bundle install`<br />
+`$ rails db:migrate RAILS_ENV=development`<br />
 
 Run tests
 `$ rspec`
 
 ### How to run server:
 
-`$ rails s`
+`$ rails s`<br />
 Then open "localhost:3000" in your browser
 
 ### How to start the rails console:
