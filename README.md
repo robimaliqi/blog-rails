@@ -27,3 +27,9 @@ Then open "localhost:3000" in your browser
 ---
 
 `$ rails c`
+
+## Live website deployed to Fly.io
+
+---
+
+[https://blog-rails.fly.dev/](https://www.example.com)
