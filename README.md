@@ -28,7 +28,7 @@ Then open "localhost:3000" in your browser
 
 `$ rails c`
 
-## Live website deployed to Fly.io
+### Live website deployed to Fly.io
 
 ---
 
