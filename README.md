@@ -32,4 +32,4 @@ Then open "localhost:3000" in your browser
 
 ---
 
-[https://blog-rails.fly.dev/](https://www.example.com)
+[https://blog-rails.fly.dev/](https://blog-rails.fly.dev/)
